@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amir Hamaja Jahagirdar | Student Developer Portfolio</title>
+    <meta name="description"
+        content="Premium futuristic portfolio of Amir Hamaja Jahagirdar, a student developer learning HTML, CSS, JavaScript, Git, GitHub, PHP, backend development, and AI.">
+    <meta name="keywords"
+        content="Amir Hamaja Jahagirdar, Student Developer, Future Full Stack Engineer, HTML, CSS, JavaScript, PHP, GitHub, AI Enthusiast, Portfolio">
+    <meta name="author" content="AmirHamaja Jahagirdar">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#070914">
+    <link rel="canonical" href="https://your-domain.example/">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070914'/%3E%3Cpath d='M13 47 30 12h4l17 35h-9l-3-7H25l-3 7H13Zm15-15h8l-4-10-4 10Z' fill='%2384f7ff'/%3E%3Ccircle cx='49' cy='16' r='6' fill='%23ff4fd8'/%3E%3C/svg%3E">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Amir Hamaja Jahagirdar | Student Developer">
+    <meta property="og:description"
+        content="Student Developer, Future Full Stack Engineer, AI Enthusiast, and Problem Solver building projects publicly.">
+    <meta property="og:url" content="https://your-domain.example/">
+    <meta property="og:site_name" content="Amir Hamaja Jahagirdar Portfolio">
+    <meta property="og:image" content="https://your-domain.example/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Amir Hamaja Jahagirdar | Student Developer">
+    <meta name="twitter:description"
+        content="A futuristic portfolio for a student developer learning by building real applications.">
+    <meta name="twitter:image" content="https://your-domain.example/og-image.png">
+    <script
+        type="application/ld+json"> { "@context": "https://schema.org", "@type": "Person", "name": "Amir Hamaja Jahagirdar", "jobTitle": "Student Developer", "description": "Student Developer, Future Full Stack Engineer, AI Enthusiast, and Problem Solver.", "url": "https://your-domain.example/", "sameAs": [ "https://github.com/amirhamajajahagirdar", "https://linkedin.com/in/your-profile", "https://instagram.com/your-profile" ], "knowsAbout": [ "HTML", "CSS", "JavaScript", "Git", "GitHub", "PHP", "Responsive Design", "Artificial Intelligence" ] } </script>
+    <style>
+        /* Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+        }
+
+        html {
+            color-scheme: dark;
+            scroll-behavior: smooth;
+            text-size-adjust: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            overflow-x: hidden;
+            background: var(--bg);
+            color: var(--text);
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.6;
+            transition: background 350ms ease, color 350ms ease;
+        }
+
+        img,
+        svg,
+        canvas {
+            display: block;
+            max-width: 100%;
+        }
+
+        button,
+        input,
+        textarea {
+            font: inherit;
+        }
+
+        button,
+        a {
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ::selection {
+            background: rgba(132, 247, 255, 0.35);
+            color: #ffffff;
+        }
+
+        /* Theme */
+        :root {
+            --bg: #050712;
+            --bg-soft: #080b18;
+            --surface: rgba(255, 255, 255, 0.075);
+            --surface-strong: rgba(255, 255, 255, 0.12);
+            --surface-muted: rgba(255, 255, 255, 0.045);
+            --text: #f7fbff;
+            --text-strong: #ffffff;
+            --muted: #aeb8cb;
+            --muted-2: #79849a;
+            --line: rgba(255, 255, 255, 0.14);
+            --line-strong: rgba(255, 255, 255, 0.24);
+            --primary: #84f7ff;
+            --primary-2: #54b8ff;
+            --secondary: #ff4fd8;
+            --accent: #b7ff5a;
+            --warning: #ffd166;
+            --danger: #ff6b7a;
+            --success: #68f2a6;
+            --shadow: 0 24px 80px rgba(0, 0, 0, 0.42);
+            --shadow-soft: 0 16px 52px rgba(0, 0, 0, 0.25);
+            --radius: 8px;
+            --radius-full: 999px;
+            --container: 1180px;
+            --header-height: 76px;
+            --ease: cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        body[data-theme="light"] {
+            color-scheme: light;
+            --bg: #f6f8ff;
+            --bg-soft: #eef3ff;
+            --surface: rgba(255, 255, 255, 0.76);
+            --surface-strong: rgba(255, 255, 255, 0.9);
+            --surface-muted: rgba(12, 18, 32, 0.055);
+            --text: #101522;
+            --text-strong: #060912;
+            --muted: #4f5a70;
+            --muted-2: #667085;
+            --line: rgba(15, 23, 42, 0.13);
+            --line-strong: rgba(15, 23, 42, 0.22);
+            --primary: #0078ff;
+            --primary-2: #00a6b8;
+            --secondary: #c01fff;
+            --accent: #26a269;
+            --warning: #b47500;
+            --danger: #d92d4a;
+            --success: #079455;
+            --shadow: 0 24px 80px rgba(15, 23, 42, 0.13);
+            --shadow-soft: 0 16px 52px rgba(15, 23, 42, 0.12);
+        }
+
+        /* Base */
+        .skip-link {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            z-index: 10000;
+            padding: 10px 14px;
+            border-radius: var(--radius);
+            background: var(--text-strong);
+            color: var(--bg);
+            transform: translateY(-140%);
+            transition: transform 180ms ease;
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
+        .site-shell {
+            position: relative;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 700ms ease, transform 700ms var(--ease);
+        }
+
+        body.loaded .site-shell {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .container {
+            width: min(100% - 32px, var(--container));
+            margin-inline: auto;
+        }
+
+        .section {
+            position: relative;
+            padding: 112px 0;
+            isolation: isolate;
+        }
+
+        .section::before {
+            content: "";
+            position: absolute;
+            inset: 0 auto auto 50%;
+            width: min(620px, 80vw);
+            height: 1px;
+            transform: translateX(-50%);
+            background: linear-gradient(90deg, transparent, rgba(132, 247, 255, 0.45), rgba(255, 79, 216, 0.3), transparent);
+            opacity: 0.65;
+        }
+
+        .section-header {
+            max-width: 760px;
+            margin-bottom: 42px;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 14px;
+            padding: 7px 11px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius-full);
+            background: var(--surface-muted);
+            color: var(--primary);
+            font-size: 0.78rem;
+            font-weight: 750;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            backdrop-filter: blur(18px);
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: currentColor;
+            box-shadow: 0 0 18px currentColor;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            color: var(--text-strong);
+            line-height: 1.02;
+            letter-spacing: 0;
+        }
+
+        h1 {
+            font-size: clamp(3.35rem, 8.4vw, 8.9rem);
+            max-width: 980px;
+            font-weight: 850;
+        }
+
+        h2 {
+            font-size: clamp(2.15rem, 4.8vw, 4.85rem);
+            font-weight: 820;
+        }
+
+        h3 {
+            font-size: clamp(1.12rem, 2vw, 1.45rem);
+            font-weight: 760;
+        }
+
+        p {
+            color: var(--muted);
+        }
+
+        .gradient-text {
+            color: transparent;
+            background: linear-gradient(115deg, var(--text-strong), var(--primary) 34%, var(--secondary) 68%, var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        .glass {
+            border: 1px solid var(--line);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.035)), var(--surface);
+            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(20px);
+        }
+
+        .gradient-border {
+            position: relative;
+            border: 1px solid transparent;
+            background: linear-gradient(var(--bg-soft), var(--bg-soft)) padding-box, linear-gradient(135deg, rgba(132, 247, 255, 0.55), rgba(255, 79, 216, 0.35), rgba(183, 255, 90, 0.35)) border-box;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+        }
+
+        .reveal.in-view {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .focus-ring:focus-visible,
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 4px;
+        }
+
+        /* Loading Screen */
+        .loader {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: grid;
+            place-items: center;
+            background: radial-gradient(circle at 20% 10%, rgba(132, 247, 255, 0.18), transparent 34%), radial-gradient(circle at 80% 70%, rgba(255, 79, 216, 0.16), transparent 36%), var(--bg);
+            transition: opacity 500ms ease, visibility 500ms ease;
+        }
+
+        body.loaded .loader {
+            pointer-events: none;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .loader-inner {
+            display: grid;
+            justify-items: center;
+            gap: 20px;
+        }
+
+        .loader-mark {
+            position: relative;
+            width: 82px;
+            height: 82px;
+            display: grid;
+            place-items: center;
+            border-radius: 24px;
+            color: var(--text-strong);
+            font-weight: 900;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--line);
+            box-shadow: 0 0 60px rgba(132, 247, 255, 0.18);
+            overflow: hidden;
+        }
+
+        .loader-mark::before {
+            content: "";
+            position: absolute;
+            inset: -2px;
+            border-radius: inherit;
+            background: conic-gradient(from 0deg, transparent, var(--primary), var(--secondary), transparent);
+            animation: spin 1.4s linear infinite;
+            z-index: -1;
+        }
+
+        .loader-text {
+            color: var(--muted);
+            font-size: 0.88rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        /* Background */
+        .background-layers {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+            pointer-events: none;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 42%), var(--bg);
+        }
+
+        .aurora {
+            position: absolute;
+            inset: -25%;
+            opacity: 0.86;
+            filter: blur(34px) saturate(1.25);
+            background: radial-gradient(circle at 18% 22%, rgba(132, 247, 255, 0.2), transparent 30%), radial-gradient(circle at 80% 16%, rgba(255, 79, 216, 0.17), transparent 26%), radial-gradient(circle at 63% 78%, rgba(183, 255, 90, 0.13), transparent 25%), radial-gradient(circle at 33% 72%, rgba(84, 184, 255, 0.18), transparent 32%);
+            animation: auroraShift 18s var(--ease) infinite alternate;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.32;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+            background-size: 72px 72px;
+            mask-image: radial-gradient(circle at center, black, transparent 74%);
+        }
+
+        .noise {
+            position: absolute;
+            inset: 0;
+            opacity: 0.18;
+            background-image: repeating-radial-gradient(circle at 17% 32%, rgba(255, 255, 255, 0.12) 0 1px, transparent 1px 5px);
+            mix-blend-mode: overlay;
+        }
+
+        #particle-canvas {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .floating-shape {
+            position: absolute;
+            width: var(--size);
+            height: var(--size);
+            border-radius: 34% 66% 52% 48%;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.11), rgba(255, 255, 255, 0.025)), radial-gradient(circle at 30% 20%, var(--color), transparent 60%);
+            box-shadow: 0 0 60px color-mix(in srgb, var(--color), transparent 66%);
+            animation: floatShape var(--duration) ease-in-out infinite alternate;
+        }
+
+        .shape-1 {
+            --size: 150px;
+            --color: rgba(132, 247, 255, 0.35);
+            --duration: 7s;
+            top: 14%;
+            left: 6%;
+        }
+
+        .shape-2 {
+            --size: 210px;
+            --color: rgba(255, 79, 216, 0.3);
+            --duration: 9s;
+            top: 58%;
+            right: 4%;
+        }
+
+        .shape-3 {
+            --size: 104px;
+            --color: rgba(183, 255, 90, 0.28);
+            --duration: 8s;
+            bottom: 14%;
+            left: 18%;
+        }
+
+        @keyframes auroraShift {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            100% {
+                transform: rotate(8deg) scale(1.12) translate3d(2%, -2%, 0);
+            }
+        }
+
+        @keyframes floatShape {
+            0% {
+                transform: translate3d(0, 0, 0) rotate(0deg);
+            }
+
+            100% {
+                transform: translate3d(28px, -36px, 0) rotate(18deg);
+            }
+        }
+
+        /* Cursor */
+        .cursor-dot,
+        .cursor-ring {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9998;
+            pointer-events: none;
+            opacity: 0;
+            transform: translate3d(-50%, -50%, 0);
+            transition: opacity 200ms ease, width 180ms ease, height 180ms ease, border-color 180ms ease;
+            will-change: transform;
+        }
+
+        .cursor-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 20px var(--primary);
+        }
+
+        .cursor-ring {
+            width: 34px;
+            height: 34px;
+            border: 1px solid rgba(132, 247, 255, 0.55);
+            border-radius: 50%;
+            mix-blend-mode: difference;
+        }
+
+        body.cursor-ready .cursor-dot,
+        body.cursor-ready .cursor-ring {
+            opacity: 1;
+        }
+
+        body.cursor-hover .cursor-ring {
+            width: 58px;
+            height: 58px;
+            border-color: rgba(255, 79, 216, 0.68);
+        }
+
+        @media (pointer: fine) {
+
+            body.cursor-ready,
+            body.cursor-ready a,
+            body.cursor-ready button,
+            body.cursor-ready input,
+            body.cursor-ready textarea {
+                cursor: none;
+            }
+        }
+
+        /* Header */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            width: 100%;
+            height: 3px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            box-shadow: 0 0 20px rgba(132, 247, 255, 0.6);
+        }
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 900;
+            height: var(--header-height);
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid transparent;
+            transition: background 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+        }
+
+        .site-header.is-scrolled {
+            border-color: var(--line);
+            background: rgba(5, 7, 18, 0.72);
+            box-shadow: 0 12px 34px rgba(0, 0, 0, 0.18);
+            backdrop-filter: blur(22px);
+        }
+
+        body[data-theme="light"] .site-header.is-scrolled {
+            background: rgba(246, 248, 255, 0.82);
+        }
+
+        .nav-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            width: min(100% - 32px, var(--container));
+            margin-inline: auto;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            font-weight: 840;
+            color: var(--text-strong);
+        }
+
+        .brand-mark {
+            width: 40px;
+            height: 40px;
+            display: grid;
+            place-items: center;
+            border-radius: var(--radius);
+            background: linear-gradient(135deg, rgba(132, 247, 255, 0.22), rgba(255, 79, 216, 0.16)), rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--line);
+            color: var(--primary);
+            box-shadow: 0 0 32px rgba(132, 247, 255, 0.18);
+        }
+
+        .brand span:last-child {
+            display: block;
+            max-width: 190px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .primary-nav {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .primary-nav a {
+            position: relative;
+            padding: 9px 10px;
+            border-radius: var(--radius-full);
+            color: var(--muted);
+            font-size: 0.88rem;
+            font-weight: 650;
+            transition: color 180ms ease, background 180ms ease;
+        }
+
+        .primary-nav a:hover,
+        .primary-nav a.is-active {
+            color: var(--text-strong);
+            background: var(--surface-muted);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .icon-button,
+        .nav-toggle {
+            position: relative;
+            width: 42px;
+            height: 42px;
+            display: inline-grid;
+            place-items: center;
+            border: 1px solid var(--line);
+            border-radius: var(--radius-full);
+            background: var(--surface);
+            color: var(--text-strong);
+            box-shadow: none;
+            cursor: pointer;
+            overflow: hidden;
+            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+        }
+
+        .icon-button:hover,
+        .nav-toggle:hover {
+            transform: translateY(-2px);
+            border-color: var(--line-strong);
+            background: var(--surface-strong);
+        }
+
+        .nav-toggle {
+            display: none;
+        }
+
+        .nav-toggle span {
+            position: absolute;
+            width: 18px;
+            height: 2px;
+            border-radius: 999px;
+            background: currentColor;
+            transition: transform 220ms var(--ease), opacity 220ms ease;
+        }
+
+        .nav-toggle span:nth-child(1) {
+            transform: translateY(-6px);
+        }
+
+        .nav-toggle span:nth-child(3) {
+            transform: translateY(6px);
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle[aria-expanded="true"] span:nth-child(3) {
+            transform: rotate(-45deg);
+        }
+
+        /* Buttons */
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .btn {
+            position: relative;
+            isolation: isolate;
+            display: inline-flex;
+            min-height: 48px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 18px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-strong);
+            font-weight: 780;
+            box-shadow: 0 12px 38px rgba(0, 0, 0, 0.18);
+            overflow: hidden;
+            transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+            will-change: transform;
+        }
+
+        .btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: 0;
+            background: linear-gradient(135deg, rgba(132, 247, 255, 0.2), rgba(255, 79, 216, 0.15));
+            transition: opacity 180ms ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--line-strong);
+            box-shadow: 0 16px 44px rgba(0, 0, 0, 0.24);
+        }
+
+        .btn:hover::before {
+            opacity: 1;
+        }
+
+        .btn-primary {
+            color: #02040b;
+            border-color: transparent;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            box-shadow: 0 18px 60px rgba(132, 247, 255, 0.24);
+        }
+
+        .btn-primary::before {
+            background: linear-gradient(135deg, #ffffff, rgba(255, 255, 255, 0));
+            mix-blend-mode: soft-light;
+        }
+
+        .btn-ghost {
+            background: transparent;
+        }
+
+        .btn svg,
+        .icon-button svg,
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 auto;
+        }
+
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            background: rgba(255, 255, 255, 0.42);
+            transform: scale(0);
+            animation: ripple 620ms ease-out;
+            z-index: 1;
+        }
+
+        @keyframes ripple {
+            to {
+                opacity: 0;
+                transform: scale(4);
+            }
+        }
+
+        /* Hero */
+        .hero {
+            min-height: calc(100vh - var(--header-height));
+            display: grid;
+            align-items: center;
+            padding: 70px 0 96px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+            gap: clamp(34px, 6vw, 76px);
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-title {
+            margin-bottom: 22px;
+        }
+
+        .hero-headline {
+            display: grid;
+            gap: 4px;
+            max-width: 680px;
+            margin-bottom: 18px;
+            color: var(--text-strong);
+            font-size: clamp(1.25rem, 2.45vw, 2.4rem);
+            font-weight: 760;
+            line-height: 1.14;
+        }
+
+        .hero-copy {
+            max-width: 670px;
+            margin-bottom: 30px;
+            font-size: clamp(1rem, 1.55vw, 1.22rem);
+        }
+
+        .typing-line {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            min-height: 34px;
+            margin-bottom: 30px;
+            color: var(--muted);
+            font-size: 1.03rem;
+            font-weight: 680;
+        }
+
+        .typing-text {
+            color: var(--primary);
+        }
+
+        .typing-cursor {
+            width: 2px;
+            height: 22px;
+            display: inline-block;
+            background: var(--secondary);
+            box-shadow: 0 0 14px var(--secondary);
+            animation: blink 0.8s steps(2, start) infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 34px;
+        }
+
+        .stat-card {
+            min-height: 104px;
+            padding: 17px;
+            border-radius: var(--radius);
+        }
+
+        .stat-number {
+            display: block;
+            color: var(--text-strong);
+            font-size: clamp(1.45rem, 2.4vw, 2.1rem);
+            font-weight: 850;
+            line-height: 1;
+        }
+
+        .stat-label {
+            margin-top: 9px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .hero-visual {
+            position: relative;
+            min-height: 560px;
+            display: grid;
+            place-items: center;
+            perspective: 1200px;
+        }
+
+        .visual-glow {
+            position: absolute;
+            width: min(520px, 86vw);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(132, 247, 255, 0.18), transparent 62%), conic-gradient(from 120deg, rgba(132, 247, 255, 0.26), rgba(255, 79, 216, 0.22), rgba(183, 255, 90, 0.14), rgba(132, 247, 255, 0.26));
+            filter: blur(4px);
+            opacity: 0.8;
+            animation: slowSpin 18s linear infinite;
+        }
+
+        .orbit-svg {
+            position: absolute;
+            width: min(560px, 94vw);
+            opacity: 0.72;
+            filter: drop-shadow(0 0 24px rgba(132, 247, 255, 0.26));
+        }
+
+        .orbit-svg path {
+            stroke-dasharray: 8 12;
+            animation: dashFlow 18s linear infinite;
+        }
+
+        .hero-device {
+            position: relative;
+            width: min(420px, 88vw);
+            border-radius: var(--radius);
+            padding: 16px;
+            transform: rotateX(8deg) rotateY(-13deg);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .hero-device::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(132, 247, 255, 0.16), transparent 30%), linear-gradient(315deg, rgba(255, 79, 216, 0.12), transparent 34%);
+            pointer-events: none;
+        }
+
+        .device-topbar {
+            display: flex;
+            gap: 7px;
+            padding-bottom: 16px;
+        }
+
+        .device-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--muted-2);
+        }
+
+        .device-dot:nth-child(1) {
+            background: #ff6b7a;
+        }
+
+        .device-dot:nth-child(2) {
+            background: #ffd166;
+        }
+
+        .device-dot:nth-child(3) {
+            background: #68f2a6;
+        }
+
+        .code-lines {
+            display: grid;
+            gap: 11px;
+            padding: 12px 4px 6px;
+        }
+
+        .code-line {
+            height: 12px;
+            border-radius: 999px;
+            background: linear-gradient(90deg, var(--primary), rgba(255, 255, 255, 0.08));
+            opacity: 0.8;
+            transform-origin: left;
+            animation: codePulse 2.6s ease-in-out infinite alternate;
+        }
+
+        .code-line:nth-child(2) {
+            width: 72%;
+            background: linear-gradient(90deg, var(--secondary), rgba(255, 255, 255, 0.08));
+            animation-delay: 0.18s;
+        }
+
+        .code-line:nth-child(3) {
+            width: 84%;
+            background: linear-gradient(90deg, var(--accent), rgba(255, 255, 255, 0.08));
+            animation-delay: 0.34s;
+        }
+
+        .code-line:nth-child(4) {
+            width: 58%;
+            animation-delay: 0.5s;
+        }
+
+        .mini-panel {
+            position: absolute;
+            display: grid;
+            gap: 4px;
+            min-width: 132px;
+            padding: 13px 14px;
+            border-radius: var(--radius);
+            color: var(--text-strong);
+        }
+
+        .mini-panel small {
+            color: var(--muted);
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .mini-panel strong {
+            font-size: 1.15rem;
+            line-height: 1;
+        }
+
+        .panel-1 {
+            top: 54px;
+            right: 8px;
+        }
+
+        .panel-2 {
+            left: 0;
+            bottom: 84px;
+        }
+
+        .panel-3 {
+            right: 36px;
+            bottom: 36px;
+        }
+
+        @keyframes slowSpin {
+            to {
+                transform: rotate(1turn);
+            }
+        }
+
+        @keyframes dashFlow {
+            to {
+                stroke-dashoffset: -220;
+            }
+        }
+
+        @keyframes codePulse {
+            to {
+                transform: scaleX(0.72);
+                opacity: 0.45;
+            }
+        }
+
+        /* About */
+        .about-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+            gap: 22px;
+            align-items: stretch;
+        }
+
+        .about-bio {
+            padding: clamp(24px, 4vw, 38px);
+            border-radius: var(--radius);
+        }
+
+        .about-bio p+p {
+            margin-top: 18px;
+        }
+
+        .about-points {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .point-card {
+            padding: 20px;
+            border-radius: var(--radius);
+        }
+
+        .point-icon {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 18px;
+            border-radius: var(--radius);
+            color: #02040b;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            box-shadow: 0 0 34px rgba(132, 247, 255, 0.16);
+        }
+
+        .point-card p {
+            margin-top: 9px;
+            font-size: 0.93rem;
+        }
+
+        /* Roadmap */
+        .roadmap {
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 14px;
+        }
+
+        .roadmap::before {
+            content: "";
+            position: absolute;
+            top: 35px;
+            left: 5%;
+            right: 5%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            opacity: 0.32;
+            z-index: -1;
+        }
+
+        .roadmap-item {
+            min-height: 150px;
+            padding: 18px;
+            border-radius: var(--radius);
+            transform-origin: center;
+            transition-delay: calc(var(--i) * 45ms);
+        }
+
+        .roadmap-node {
+            width: 34px;
+            height: 34px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 18px;
+            border: 1px solid var(--line);
+            border-radius: 50%;
+            background: var(--bg-soft);
+            color: var(--muted);
+            box-shadow: 0 0 0 6px rgba(132, 247, 255, 0.05);
+        }
+
+        .roadmap-item.done .roadmap-node {
+            color: #021012;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+        }
+
+        .roadmap-item.learning .roadmap-node {
+            color: #180014;
+            background: linear-gradient(135deg, var(--warning), var(--secondary));
+            animation: nodePulse 1.8s ease-in-out infinite;
+        }
+
+        .roadmap-status {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--muted-2);
+            font-size: 0.78rem;
+            font-weight: 740;
+            text-transform: uppercase;
+        }
+
+        @keyframes nodePulse {
+            50% {
+                box-shadow: 0 0 0 10px rgba(255, 209, 102, 0.08), 0 0 34px rgba(255, 79, 216, 0.24);
+            }
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .skill-group {
+            padding: 24px;
+            border-radius: var(--radius);
+        }
+
+        .skill-group h3 {
+            margin-bottom: 20px;
+        }
+
+        .skill-line {
+            display: grid;
+            gap: 8px;
+            margin-top: 17px;
+        }
+
+        .skill-meta {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            color: var(--muted);
+            font-size: 0.92rem;
+            font-weight: 680;
+        }
+
+        .skill-track {
+            position: relative;
+            height: 9px;
+            border-radius: 999px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .skill-fill {
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 0;
+            border-radius: inherit;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+            box-shadow: 0 0 20px rgba(132, 247, 255, 0.3);
+            transition: width 1200ms var(--ease);
+        }
+
+        /* Projects */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .tilt-card {
+            --rx: 0deg;
+            --ry: 0deg;
+            transform-style: preserve-3d;
+            transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+            will-change: transform;
+        }
+
+        .tilt-card.is-tilting {
+            transform: perspective(980px) rotateX(var(--rx)) rotateY(var(--ry)) translateY(-4px);
+        }
+
+        .project-card {
+            position: relative;
+            min-height: 100%;
+            padding: 16px;
+            border-radius: var(--radius);
+            overflow: hidden;
+        }
+
+        .project-card::after {
+            content: "";
+            position: absolute;
+            inset: auto 18px -45px;
+            height: 80px;
+            background: radial-gradient(circle, rgba(132, 247, 255, 0.22), transparent 68%);
+            opacity: 0;
+            transition: opacity 220ms ease;
+            pointer-events: none;
+        }
+
+        .project-card:hover::after {
+            opacity: 1;
+        }
+
+        .project-media {
+            position: relative;
+            display: grid;
+            place-items: center;
+            min-height: 190px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: radial-gradient(circle at 20% 20%, rgba(132, 247, 255, 0.28), transparent 30%), radial-gradient(circle at 82% 72%, rgba(255, 79, 216, 0.24), transparent 34%), linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025));
+        }
+
+        .project-media svg {
+            width: 68%;
+            max-width: 260px;
+            opacity: 0.96;
+            filter: drop-shadow(0 18px 34px rgba(0, 0, 0, 0.22));
+            transform: translateZ(34px);
+        }
+
+        .project-card h3 {
+            margin-bottom: 9px;
+        }
+
+        .project-card p {
+            min-height: 76px;
+            font-size: 0.94rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 18px 0;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            min-height: 29px;
+            padding: 5px 9px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius-full);
+            background: var(--surface-muted);
+            color: var(--muted);
+            font-size: 0.78rem;
+            font-weight: 720;
+        }
+
+        .project-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .small-btn {
+            min-height: 39px;
+            padding: 9px 12px;
+            font-size: 0.86rem;
+        }
+
+        /* Experience */
+        .timeline {
+            position: relative;
+            max-width: 940px;
+            margin-inline: auto;
+            display: grid;
+            gap: 18px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 22px;
+            width: 2px;
+            background: linear-gradient(var(--primary), var(--secondary), var(--accent));
+            opacity: 0.38;
+        }
+
+        .timeline-item {
+            position: relative;
+            display: grid;
+            grid-template-columns: 52px 1fr;
+            gap: 18px;
+            align-items: start;
+        }
+
+        .timeline-dot {
+            position: relative;
+            z-index: 1;
+            width: 46px;
+            height: 46px;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: var(--bg-soft);
+            border: 1px solid var(--line-strong);
+            color: var(--primary);
+            box-shadow: 0 0 28px rgba(132, 247, 255, 0.12);
+        }
+
+        .timeline-content {
+            padding: 20px;
+            border-radius: var(--radius);
+        }
+
+        .timeline-content p {
+            margin-top: 7px;
+        }
+
+        /* GitHub */
+        .github-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.95fr) minmax(320px, 1.05fr);
+            gap: 18px;
+            align-items: stretch;
+        }
+
+        .github-profile {
+            padding: 28px;
+            border-radius: var(--radius);
+        }
+
+        .profile-avatar {
+            width: 86px;
+            height: 86px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 18px;
+            border-radius: 24px;
+            background: linear-gradient(135deg, rgba(132, 247, 255, 0.24), rgba(255, 79, 216, 0.17)), var(--surface-muted);
+            border: 1px solid var(--line);
+            color: var(--primary);
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .github-stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 10px;
+            margin: 22px 0;
+        }
+
+        .github-stat {
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--surface-muted);
+        }
+
+        .github-stat strong {
+            display: block;
+            color: var(--text-strong);
+            font-size: 1.35rem;
+            line-height: 1;
+        }
+
+        .github-stat span {
+            color: var(--muted);
+            font-size: 0.78rem;
+        }
+
+        .github-dashboard {
+            display: grid;
+            gap: 14px;
+        }
+
+        .contribution-card,
+        .activity-card,
+        .pinned-card {
+            padding: 20px;
+            border-radius: var(--radius);
+        }
+
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            gap: 5px;
+            margin-top: 17px;
+        }
+
+        .contribution-cell {
+            aspect-ratio: 1;
+            border-radius: 3px;
+            background: rgba(132, 247, 255, calc(0.08 + var(--level) * 0.12));
+            box-shadow: 0 0 12px rgba(132, 247, 255, calc(var(--level) * 0.08));
+        }
+
+        .activity-list {
+            display: grid;
+            gap: 10px;
+            margin-top: 14px;
+        }
+
+        .activity-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--muted);
+            font-size: 0.92rem;
+        }
+
+        .activity-list li::before {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 14px var(--primary);
+        }
+
+        .pinned-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .repo-chip {
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--surface-muted);
+        }
+
+        .repo-chip small {
+            display: block;
+            margin-top: 6px;
+            color: var(--muted);
+        }
+
+        /* Certificates and Blog */
+        .certificate-grid,
+        .blog-grid,
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .certificate-card,
+        .blog-card,
+        .testimonial-card {
+            padding: 24px;
+            border-radius: var(--radius);
+        }
+
+        .certificate-icon,
+        .blog-icon {
+            width: 52px;
+            height: 52px;
+            display: grid;
+            place-items: center;
+            margin-bottom: 18px;
+            border-radius: var(--radius);
+            background: linear-gradient(135deg, rgba(132, 247, 255, 0.2), rgba(255, 79, 216, 0.15));
+            color: var(--primary);
+            border: 1px solid var(--line);
+        }
+
+        .certificate-card p,
+        .blog-card p,
+        .testimonial-card p {
+            margin: 10px 0 18px;
+        }
+
+        /* Tech Stack */
+        .stack-marquee {
+            position: relative;
+            overflow: hidden;
+            border-block: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.03);
+            mask-image: linear-gradient(90deg, transparent, black 9%, black 91%, transparent);
+        }
+
+        .stack-track {
+            display: flex;
+            width: max-content;
+            gap: 14px;
+            padding: 24px 0;
+            animation: marquee 28s linear infinite;
+        }
+
+        .stack-track:hover {
+            animation-play-state: paused;
+        }
+
+        .stack-item {
+            min-width: 148px;
+            display: inline-flex;
+            align-items: center;
+            gap: 11px;
+            padding: 14px;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: var(--surface);
+            color: var(--text-strong);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .stack-icon {
+            width: 38px;
+            height: 38px;
+            display: grid;
+            place-items: center;
+            border-radius: var(--radius);
+            color: #02040b;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            font-size: 0.78rem;
+            font-weight: 900;
+        }
+
+        @keyframes marquee {
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Contact */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: minmax(0, 0.82fr) minmax(320px, 1.18fr);
+            gap: 22px;
+            align-items: start;
+        }
+
+        .contact-panel {
+            padding: 28px;
+            border-radius: var(--radius);
+        }
+
+        .contact-list {
+            display: grid;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .contact-list a {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            min-height: 46px;
+            color: var(--muted);
+            transition: color 180ms ease, transform 180ms ease;
+        }
+
+        .contact-list a:hover {
+            color: var(--text-strong);
+            transform: translateX(4px);
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 16px;
+            padding: 24px;
+            border-radius: var(--radius);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .field {
+            position: relative;
+            display: grid;
+            gap: 7px;
+        }
+
+        .field.full {
+            grid-column: 1 / -1;
+        }
+
+        .field label {
+            color: var(--muted);
+            font-size: 0.86rem;
+            font-weight: 720;
+        }
+
+        .field input,
+        .field textarea {
+            width: 100%;
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            background: rgba(255, 255, 255, 0.055);
+            color: var(--text-strong);
+            padding: 14px 15px;
+            outline: none;
+            transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+        }
+
+        .field textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .field input:focus,
+        .field textarea:focus {
+            border-color: rgba(132, 247, 255, 0.72);
+            background: rgba(255, 255, 255, 0.085);
+            box-shadow: 0 0 0 4px rgba(132, 247, 255, 0.08);
+        }
+
+        .field-error {
+            min-height: 18px;
+            color: var(--danger);
+            font-size: 0.78rem;
+        }
+
+        .form-success {
+            display: none;
+            align-items: center;
+            gap: 9px;
+            padding: 14px;
+            border: 1px solid rgba(104, 242, 166, 0.34);
+            border-radius: var(--radius);
+            background: rgba(104, 242, 166, 0.08);
+            color: var(--success);
+            font-weight: 720;
+        }
+
+        .form-success.show {
+            display: flex;
+            animation: successPop 420ms var(--ease);
+        }
+
+        @keyframes successPop {
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Footer */
+        .site-footer {
+            padding: 44px 0;
+            border-top: 1px solid var(--line);
+            background: rgba(255, 255, 255, 0.025);
+        }
+
+        .footer-grid {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px;
+            flex-wrap: wrap;
+        }
+
+        .footer-copy {
+            color: var(--muted);
+            font-size: 0.94rem;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .social-link {
+            width: 42px;
+            height: 42px;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--line);
+            border-radius: var(--radius-full);
+            background: var(--surface);
+            color: var(--muted);
+            transition: color 180ms ease, border-color 180ms ease, transform 180ms ease, background 180ms ease;
+        }
+
+        .social-link:hover {
+            color: var(--text-strong);
+            border-color: var(--line-strong);
+            background: var(--surface-strong);
+            transform: translateY(-2px);
+        }
+
+        .back-to-top {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 850;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(12px);
+            transition: opacity 200ms ease, visibility 200ms ease, transform 200ms ease;
+        }
+
+        .back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1120px) {
+            .primary-nav {
+                position: fixed;
+                top: calc(var(--header-height) + 10px);
+                left: 16px;
+                right: 16px;
+                display: grid;
+                gap: 4px;
+                padding: 14px;
+                border: 1px solid var(--line);
+                border-radius: var(--radius);
+                background: rgba(5, 7, 18, 0.92);
+                box-shadow: var(--shadow);
+                backdrop-filter: blur(22px);
+                transform: translateY(-14px);
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 200ms ease, transform 200ms ease, visibility 200ms ease;
+            }
+
+            body[data-theme="light"] .primary-nav {
+                background: rgba(246, 248, 255, 0.94);
+            }
+
+            .primary-nav.is-open {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+
+            .primary-nav a {
+                padding: 13px 14px;
+            }
+
+            .nav-toggle {
+                display: inline-grid;
+            }
+
+            .hero-grid,
+            .about-grid,
+            .github-layout,
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                min-height: 500px;
+            }
+
+            .roadmap {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .skills-grid,
+            .project-grid,
+            .certificate-grid,
+            .blog-grid,
+            .testimonial-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 760px) {
+            :root {
+                --header-height: 70px;
+            }
+
+            .section {
+                padding: 82px 0;
+            }
+
+            .hero {
+                padding-top: 42px;
+            }
+
+            .brand span:last-child {
+                max-width: 142px;
+            }
+
+            .hero-stats,
+            .about-points,
+            .skills-grid,
+            .project-grid,
+            .certificate-grid,
+            .blog-grid,
+            .testimonial-grid,
+            .form-grid,
+            .pinned-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-visual {
+                min-height: 420px;
+            }
+
+            .mini-panel {
+                position: relative;
+                inset: auto;
+                min-width: 0;
+            }
+
+            .hero-device {
+                width: min(360px, 94vw);
+                transform: rotateX(5deg) rotateY(-6deg);
+            }
+
+            .panel-1,
+            .panel-2,
+            .panel-3 {
+                position: absolute;
+            }
+
+            .panel-1 {
+                top: 10px;
+                right: 0;
+            }
+
+            .panel-2 {
+                left: 0;
+                bottom: 42px;
+            }
+
+            .panel-3 {
+                right: 0;
+                bottom: 0;
+            }
+
+            .roadmap {
+                grid-template-columns: 1fr;
+            }
+
+            .roadmap::before {
+                top: 0;
+                bottom: 0;
+                left: 34px;
+                right: auto;
+                width: 2px;
+                height: auto;
+            }
+
+            .roadmap-item {
+                display: grid;
+                grid-template-columns: 48px 1fr;
+                column-gap: 12px;
+                min-height: auto;
+            }
+
+            .roadmap-node {
+                margin-bottom: 0;
+            }
+
+            .roadmap-item h3,
+            .roadmap-item .roadmap-status {
+                grid-column: 2;
+            }
+
+            .github-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .contribution-grid {
+                grid-template-columns: repeat(12, 1fr);
+            }
+
+            .footer-grid {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 480px) {
+
+            .container,
+            .nav-wrap {
+                width: min(100% - 24px, var(--container));
+            }
+
+            h1 {
+                font-size: clamp(3rem, 17vw, 4.6rem);
+            }
+
+            .button-row,
+            .project-actions {
+                width: 100%;
+            }
+
+            .btn,
+            .small-btn {
+                width: 100%;
+            }
+
+            .hero-stats {
+                gap: 10px;
+            }
+
+            .stat-card {
+                min-height: auto;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: 0.001ms !important;
+            }
+
+            .site-shell,
+            .reveal {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        noscript .loader {
+            display: none;
+        }
+    </style>
+</head>
+
+<body> <noscript>
+        <style>
+            .loader {
+                display: none;
+            }
+
+            .site-shell {
+                opacity: 1;
+                transform: none;
+            }
+        </style>
+    </noscript>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading portfolio">
+        <div class="loader-inner">
+            <div class="loader-mark">AH</div>
+            <div class="loader-text">Loading Experience</div>
+        </div>
+    </div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="background-layers" aria-hidden="true">
+        <div class="aurora"></div> <canvas id="particle-canvas"></canvas>
+        <div class="grid-overlay"></div>
+        <div class="noise"></div>
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+    <div class="site-shell">
+        <header class="site-header" id="siteHeader">
+            <div class="nav-wrap"> <a class="brand magnetic" href="#home" aria-label="Amir Hamaja Jahagirdar home">
+                    <span class="brand-mark">A</span> <span>Amir Hamaja</span> </a>
+                <nav class="primary-nav" id="primaryNavigation" aria-label="Primary navigation">
+                    <a href="#about">About</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#github">GitHub</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <div class="nav-actions">
+                    <button class="icon-button ripple-button" id="themeToggle" type="button" aria-label="Toggle theme"
+                        aria-pressed="false">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M12 3v2.2M12 18.8V21M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M3 12h2.2M18.8 12H21M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"
+                                stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            <circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8" />
+                        </svg>
+                    </button>
+                    <button class="nav-toggle ripple-button" type="button" aria-label="Open menu"
+                        aria-controls="primaryNavigation" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main id="main">
+            <section class="hero" id="home" aria-labelledby="hero-title">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <span class="eyebrow reveal">Building in public</span>
+                        <h1 class="hero-title reveal" id="hero-title">
+                            Amir Hamaja <span class="gradient-text">Jahagirdar</span>
+                        </h1>
+                        <div class="hero-headline reveal">
+                            <span>Student Developer</span>
+                            <span>Future Full Stack Engineer</span>
+                            <span>AI Enthusiast · Problem Solver</span>
+                        </div>
+                        <p class="hero-copy reveal text-balance">
+                            I am learning by creating real applications, improving consistently, and turning every
+                            project into a practical step toward full stack development and AI.
+                        </p>
+                        <div class="typing-line reveal" aria-live="polite">
+                            <span>Currently growing as</span>
+                            <span class="typing-text" id="typingText">HTML Developer</span>
+                            <span class="typing-cursor" aria-hidden="true"></span>
+                        </div>
+                        <div class="button-row reveal">
+                            <a class="btn btn-primary magnetic ripple-button" href="#projects">
+                                View Projects
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a class="btn magnetic ripple-button"
+                                href="data:text/plain;charset=utf-8,Amir%20Hamaja%20Jahagirdar%0AStudent%20Developer%0AFuture%20Full%20Stack%20Engineer%0AAI%20Enthusiast%0AResume%20placeholder%20-%20replace%20this%20with%20your%20PDF%20resume%20when%20ready."
+                                download="Amir-Hamaja-Jahagirdar-Resume.txt">
+                                Download Resume
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 21h14" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a class="btn btn-ghost magnetic ripple-button" href="#contact">
+                                Contact
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 6h16v12H4V6Zm0 1 8 6 8-6" stroke="currentColor" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="hero-stats" aria-label="Portfolio highlights">
+                            <div class="stat-card glass reveal">
+                                <span class="stat-number" data-count="7" data-suffix="+">0</span>
+                                <p class="stat-label">Project Ideas</p>
+                            </div>
+                            <div class="stat-card glass reveal">
+                                <span class="stat-number" data-count="14" data-suffix="+">0</span>
+                                <p class="stat-label">Learning Topics</p>
+                            </div>
+                            <div class="stat-card glass reveal">
+                                <span class="stat-number" data-count="100" data-suffix="%">0</span>
+                                <p class="stat-label">Consistency Mindset</p>
+                            </div>
+                            <div class="stat-card glass reveal">
+                                <span class="stat-number" data-count="2026">0</span>
+                                <p class="stat-label">Portfolio Vision</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal" aria-hidden="true">
+                        <div class="visual-glow"></div>
+                        <svg class="orbit-svg" viewBox="0 0 500 500" fill="none">
+                            <path d="M250 40c117 0 210 94 210 210S367 460 250 460 40 367 40 250 133 40 250 40Z"
+                                stroke="url(#orbitGradient)" stroke-width="1.5" />
+                            <path
+                                d="M80 280c42-128 154-207 283-151 71 31 87 113 49 177-49 82-168 126-270 71-63-34-82-85-62-97Z"
+                                stroke="url(#orbitGradient)" stroke-width="1.5" />
+                            <defs>
+                                <linearGradient id="orbitGradient" x1="40" y1="40" x2="460" y2="460">
+                                    <stop stop-color="#84f7ff" />
+                                    <stop offset="0.5" stop-color="#ff4fd8" />
+                                    <stop offset="1" stop-color="#b7ff5a" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <div class="hero-device glass gradient-border parallax" data-depth="0.04">
+                            <div class="device-topbar">
+                                <span class="device-dot"></span>
+                                <span class="device-dot"></span>
+                                <span class="device-dot"></span>
+                            </div>
+                            <div class="code-lines">
+                                <span class="code-line" style="width: 92%"></span>
+                                <span class="code-line"></span>
+                                <span class="code-line"></span>
+                                <span class="code-line"></span>
+                                <span class="code-line" style="width: 77%"></span>
+                                <span class="code-line" style="width: 64%"></span>
+                            </div>
+                        </div>
+
+                        <div class="mini-panel panel-1 glass parallax" data-depth="0.08">
+                            <small>Focus</small>
+                            <strong>Frontend</strong>
+                        </div>
+                        <div class="mini-panel panel-2 glass parallax" data-depth="0.12">
+                            <small>Next</small>
+                            <strong>Backend</strong>
+                        </div>
+                        <div class="mini-panel panel-3 glass parallax" data-depth="0.1">
+                            <small>Future</small>
+                            <strong>AI</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about" aria-labelledby="about-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">About</span>
+                        <h2 id="about-title">Learning through real projects.</h2>
+                    </div>
+
+                    <div class="about-grid">
+                        <article class="about-bio glass reveal">
+                            <p>
+                                I am Amir Hamaja Jahagirdar, a student developer building a strong foundation in HTML,
+                                CSS, JavaScript, Git, GitHub, and PHP. I enjoy turning ideas into working projects
+                                because building helps me understand concepts more deeply than only watching tutorials.
+                            </p>
+                            <p>
+                                My goal is to become a Full Stack Developer and later specialize in Artificial
+                                Intelligence. I believe consistent improvement matters more than perfection, and every
+                                project teaches something new about design, logic, debugging, and real-world problem
+                                solving.
+                            </p>
+                            <p>
+                                I am building my portfolio publicly as proof of progress. Each application I create is a
+                                step toward cleaner code, stronger thinking, better user experiences, and the confidence
+                                to solve meaningful problems with technology.
+                            </p>
+                        </article>
+
+                        <div class="about-points">
+                            <article class="point-card glass reveal">
+                                <div class="point-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="m7 8 5-5 5 5M12 3v18" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3>Consistent Improvement</h3>
+                                <p>Small daily progress creates long-term skill, discipline, and confidence.</p>
+                            </article>
+                            <article class="point-card glass reveal">
+                                <div class="point-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3>Project-Based Learning</h3>
+                                <p>I learn fastest by creating real applications and improving them step by step.</p>
+                            </article>
+                            <article class="point-card glass reveal">
+                                <div class="point-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M12 3a7 7 0 0 0-4 12.75V19h8v-3.25A7 7 0 0 0 12 3Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                        <path d="M9 22h6" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <h3>Problem Solver</h3>
+                                <p>I enjoy building tools that make ideas visual, interactive, and useful.</p>
+                            </article>
+                            <article class="point-card glass reveal">
+                                <div class="point-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M12 3 4 7v6c0 5 3.4 7.7 8 9 4.6-1.3 8-4 8-9V7l-8-4Z"
+                                            stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+                                        <path d="m8.5 12 2.2 2.2 4.8-5" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <h3>Public Portfolio</h3>
+                                <p>This portfolio is a living record of my learning, experiments, and future work.</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="roadmap" aria-labelledby="roadmap-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Learning Roadmap</span>
+                        <h2 id="roadmap-title">From fundamentals to AI.</h2>
+                    </div>
+
+                    <div class="roadmap" aria-label="Learning roadmap">
+                        <article class="roadmap-item done glass reveal" style="--i: 1">
+                            <div class="roadmap-node">✓</div>
+                            <h3>HTML</h3>
+                            <span class="roadmap-status">Completed</span>
+                        </article>
+                        <article class="roadmap-item done glass reveal" style="--i: 2">
+                            <div class="roadmap-node">✓</div>
+                            <h3>CSS</h3>
+                            <span class="roadmap-status">Completed</span>
+                        </article>
+                        <article class="roadmap-item done glass reveal" style="--i: 3">
+                            <div class="roadmap-node">✓</div>
+                            <h3>JavaScript</h3>
+                            <span class="roadmap-status">Completed</span>
+                        </article>
+                        <article class="roadmap-item done glass reveal" style="--i: 4">
+                            <div class="roadmap-node">✓</div>
+                            <h3>Git</h3>
+                            <span class="roadmap-status">Completed</span>
+                        </article>
+                        <article class="roadmap-item done glass reveal" style="--i: 5">
+                            <div class="roadmap-node">✓</div>
+                            <h3>GitHub</h3>
+                            <span class="roadmap-status">Completed</span>
+                        </article>
+                        <article class="roadmap-item learning glass reveal" style="--i: 6">
+                            <div class="roadmap-node">↻</div>
+                            <h3>PHP</h3>
+                            <span class="roadmap-status">Learning</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 7">
+                            <div class="roadmap-node">07</div>
+                            <h3>Responsive Design</h3>
+                            <span class="roadmap-status">Next depth</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 8">
+                            <div class="roadmap-node">08</div>
+                            <h3>Backend</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 9">
+                            <div class="roadmap-node">09</div>
+                            <h3>Node.js</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 10">
+                            <div class="roadmap-node">10</div>
+                            <h3>Express</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 11">
+                            <div class="roadmap-node">11</div>
+                            <h3>Databases</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 12">
+                            <div class="roadmap-node">12</div>
+                            <h3>React</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 13">
+                            <div class="roadmap-node">13</div>
+                            <h3>Next.js</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 14">
+                            <div class="roadmap-node">14</div>
+                            <h3>TypeScript</h3>
+                            <span class="roadmap-status">Upcoming</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 15">
+                            <div class="roadmap-node">15</div>
+                            <h3>Android Development</h3>
+                            <span class="roadmap-status">Future</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 16">
+                            <div class="roadmap-node">16</div>
+                            <h3>Cloud</h3>
+                            <span class="roadmap-status">Future</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 17">
+                            <div class="roadmap-node">17</div>
+                            <h3>Artificial Intelligence</h3>
+                            <span class="roadmap-status">Future</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 18">
+                            <div class="roadmap-node">18</div>
+                            <h3>Machine Learning</h3>
+                            <span class="roadmap-status">Future</span>
+                        </article>
+                        <article class="roadmap-item glass reveal" style="--i: 19">
+                            <div class="roadmap-node">19</div>
+                            <h3>Career</h3>
+                            <span class="roadmap-status">Goal</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="skills" aria-labelledby="skills-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Skills</span>
+                        <h2 id="skills-title">A growing engineering toolkit.</h2>
+                    </div>
+
+                    <div class="skills-grid">
+                        <article class="skill-group glass reveal">
+                            <h3>Frontend</h3>
+                            <div class="skill-line" data-skill="95">
+                                <div class="skill-meta"><span>HTML</span><span>95%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="90">
+                                <div class="skill-meta"><span>CSS</span><span>90%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="82">
+                                <div class="skill-meta"><span>JavaScript</span><span>82%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="86">
+                                <div class="skill-meta"><span>Responsive Design</span><span>86%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="76">
+                                <div class="skill-meta"><span>Canvas API</span><span>76%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="74">
+                                <div class="skill-meta"><span>SVG</span><span>74%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                        </article>
+
+                        <article class="skill-group glass reveal">
+                            <h3>Backend</h3>
+                            <div class="skill-line" data-skill="68">
+                                <div class="skill-meta"><span>PHP</span><span>68%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="42">
+                                <div class="skill-meta"><span>Learning Node.js</span><span>42%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="50">
+                                <div class="skill-meta"><span>Backend Logic</span><span>50%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="44">
+                                <div class="skill-meta"><span>APIs</span><span>44%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                        </article>
+
+                        <article class="skill-group glass reveal">
+                            <h3>Tools</h3>
+                            <div class="skill-line" data-skill="88">
+                                <div class="skill-meta"><span>VS Code</span><span>88%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="80">
+                                <div class="skill-meta"><span>Git</span><span>80%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="82">
+                                <div class="skill-meta"><span>GitHub</span><span>82%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="64">
+                                <div class="skill-meta"><span>Figma</span><span>64%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                            <div class="skill-line" data-skill="72">
+                                <div class="skill-meta"><span>AI Tools</span><span>72%</span></div>
+                                <div class="skill-track"><span class="skill-fill"></span></div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects" aria-labelledby="projects-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Projects</span>
+                        <h2 id="projects-title">Experiments, games, and learning builds.</h2>
+                    </div>
+
+                    <div class="project-grid">
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <rect x="28" y="24" width="204" height="132" rx="12" fill="rgba(255,255,255,.1)"
+                                        stroke="rgba(255,255,255,.35)" />
+                                    <path d="M54 62h86M54 88h132M54 114h98" stroke="#84f7ff" stroke-width="10"
+                                        stroke-linecap="round" />
+                                    <circle cx="194" cy="62" r="19" fill="#ff4fd8" />
+                                </svg>
+                            </div>
+                            <h3>Personal Portfolio</h3>
+                            <p>Responsive portfolio website built with HTML, CSS, JavaScript, and GitHub Pages.</p>
+                            <div class="tag-list">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span
+                                    class="tag">JavaScript</span><span class="tag">GitHub Pages</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button" href="https://github.com/your-username"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button" href="https://your-domain.example/"
+                                    target="_blank" rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <path d="M42 138h176M62 28v124" stroke="rgba(255,255,255,.28)" stroke-width="4"
+                                        stroke-linecap="round" />
+                                    <path d="M62 120 112 82l34 20 54-58" stroke="#84f7ff" stroke-width="6"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <circle cx="112" cy="82" r="8" fill="#b7ff5a" />
+                                    <circle cx="200" cy="44" r="10" fill="#ff4fd8" />
+                                </svg>
+                            </div>
+                            <h3>Interactive Graph Plotter</h3>
+                            <p>Coordinate geometry tool with distance calculator, zoom, pan, and touch support.</p>
+                            <div class="tag-list">
+                                <span class="tag">Canvas</span><span class="tag">Geometry</span><span
+                                    class="tag">Zoom</span><span class="tag">Touch</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button"
+                                    href="https://github.com/your-username/graph-plotter" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/graph-plotter" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <path d="M38 138c42-22 83-22 124 0 23 12 43 14 60 4" stroke="rgba(255,255,255,.34)"
+                                        stroke-width="10" stroke-linecap="round" />
+                                    <rect x="88" y="74" width="74" height="35" rx="8" fill="#84f7ff" />
+                                    <circle cx="104" cy="116" r="12" fill="#050712" stroke="#b7ff5a" stroke-width="5" />
+                                    <circle cx="149" cy="116" r="12" fill="#050712" stroke="#b7ff5a" stroke-width="5" />
+                                    <path d="M166 70l25-14 4 16-23 10" fill="#ff4fd8" />
+                                </svg>
+                            </div>
+                            <h3>3D Racing Game</h3>
+                            <p>JavaScript canvas racing concept with high graphics, explosions, and mobile friendly
+                                controls.</p>
+                            <div class="tag-list">
+                                <span class="tag">JavaScript</span><span class="tag">Canvas</span><span
+                                    class="tag">Game</span><span class="tag">Mobile</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button"
+                                    href="https://github.com/your-username/racing-game" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/racing-game" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <rect x="58" y="30" width="30" height="120" rx="8" fill="#b7ff5a" />
+                                    <rect x="174" y="30" width="30" height="120" rx="8" fill="#b7ff5a" />
+                                    <circle cx="128" cy="88" r="22" fill="#ffd166" />
+                                    <path d="M142 88h34M116 82l-30-16" stroke="#84f7ff" stroke-width="7"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3>Flappy Bird Clone</h3>
+                            <p>Canvas game with collision detection, score tracking, keyboard input, and touch controls.
+                            </p>
+                            <div class="tag-list">
+                                <span class="tag">Canvas</span><span class="tag">Collision</span><span
+                                    class="tag">Score</span><span class="tag">Touch</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button"
+                                    href="https://github.com/your-username/flappy-bird" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/flappy-bird" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <circle cx="70" cy="55" r="12" fill="#84f7ff" />
+                                    <circle cx="128" cy="92" r="12" fill="#ff4fd8" />
+                                    <circle cx="190" cy="56" r="12" fill="#b7ff5a" />
+                                    <circle cx="96" cy="132" r="12" fill="#ffd166" />
+                                    <path d="M70 55 128 92 190 56M128 92 96 132" stroke="rgba(255,255,255,.55)"
+                                        stroke-width="6" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3>Drawing Game</h3>
+                            <p>Connect-the-line inspired drawing game with animated levels and interactive visual
+                                feedback.</p>
+                            <div class="tag-list">
+                                <span class="tag">Drawing</span><span class="tag">Canvas</span><span
+                                    class="tag">Levels</span><span class="tag">Animation</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button"
+                                    href="https://github.com/your-username/drawing-game" target="_blank"
+                                    rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/drawing-game" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <rect x="92" y="24" width="76" height="132" rx="18" fill="rgba(255,255,255,.12)"
+                                        stroke="rgba(255,255,255,.38)" />
+                                    <rect x="107" y="47" width="46" height="75" rx="8" fill="rgba(132,247,255,.22)" />
+                                    <circle cx="130" cy="139" r="6" fill="#ff4fd8" />
+                                </svg>
+                            </div>
+                            <h3>Future Android Apps</h3>
+                            <p>Coming soon: mobile app experiments focused on useful tools and clean Android
+                                experiences.</p>
+                            <div class="tag-list">
+                                <span class="tag">Coming Soon</span><span class="tag">Android</span><span
+                                    class="tag">Mobile</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button" href="https://github.com/your-username"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/android-apps" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+
+                        <article class="project-card glass tilt-card reveal">
+                            <div class="project-media">
+                                <svg viewBox="0 0 260 180" fill="none" aria-hidden="true">
+                                    <path d="M82 92a48 48 0 1 1 96 0v22a22 22 0 0 1-22 22h-52a22 22 0 0 1-22-22V92Z"
+                                        fill="rgba(132,247,255,.18)" stroke="rgba(255,255,255,.42)" stroke-width="4" />
+                                    <circle cx="112" cy="92" r="8" fill="#84f7ff" />
+                                    <circle cx="148" cy="92" r="8" fill="#ff4fd8" />
+                                    <path d="M112 118h36" stroke="#b7ff5a" stroke-width="5" stroke-linecap="round" />
+                                    <path d="M130 44V24" stroke="#ffd166" stroke-width="6" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <h3>Future AI Projects</h3>
+                            <p>Coming soon: AI-powered learning tools, assistants, and problem-solving applications.</p>
+                            <div class="tag-list">
+                                <span class="tag">Coming Soon</span><span class="tag">AI</span><span class="tag">Machine
+                                    Learning</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn small-btn ripple-button" href="https://github.com/your-username"
+                                    target="_blank" rel="noopener noreferrer">GitHub</a>
+                                <a class="btn small-btn btn-primary ripple-button"
+                                    href="https://example.com/ai-projects" target="_blank"
+                                    rel="noopener noreferrer">Live Demo</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="experience" aria-labelledby="experience-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Experience</span>
+                        <h2 id="experience-title">The timeline so far.</h2>
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">01</div>
+                            <div class="timeline-content glass">
+                                <h3>Started Programming</h3>
+                                <p>Began exploring how websites and applications are built from the ground up.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">02</div>
+                            <div class="timeline-content glass">
+                                <h3>Learning Web Development</h3>
+                                <p>Focused on HTML, CSS, JavaScript, Git, GitHub, and PHP fundamentals.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">03</div>
+                            <div class="timeline-content glass">
+                                <h3>Built Multiple Projects</h3>
+                                <p>Created portfolio pages, canvas games, graph tools, and interactive experiments.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">04</div>
+                            <div class="timeline-content glass">
+                                <h3>Published Portfolio</h3>
+                                <p>Started building publicly and presenting progress through a personal portfolio.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">05</div>
+                            <div class="timeline-content glass">
+                                <h3>Learning Backend</h3>
+                                <p>Expanding toward server-side development, databases, APIs, and application logic.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">06</div>
+                            <div class="timeline-content glass">
+                                <h3>Learning AI</h3>
+                                <p>Preparing to specialize in AI after building a strong full stack foundation.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-dot">07</div>
+                            <div class="timeline-content glass">
+                                <h3>Future Software Engineer</h3>
+                                <p>The long-term direction is to solve real problems with reliable, useful software.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="github" aria-labelledby="github-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">GitHub</span>
+                        <h2 id="github-title">A public record of progress.</h2>
+                    </div>
+
+                    <div class="github-layout">
+                        <article class="github-profile glass reveal">
+                            <div class="profile-avatar">AH</div>
+                            <h3>GitHub Profile</h3>
+                            <p>Repositories, pinned projects, recent activity, and contribution history will grow here
+                                as new projects are published.</p>
+                            <div class="github-stats">
+                                <div class="github-stat">
+                                    <strong data-count="12" data-suffix="+">0</strong>
+                                    <span>Repositories</span>
+                                </div>
+                                <div class="github-stat">
+                                    <strong data-count="25" data-suffix="+">0</strong>
+                                    <span>Followers</span>
+                                </div>
+                                <div class="github-stat">
+                                    <strong data-count="40" data-suffix="+">0</strong>
+                                    <span>Stars</span>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary magnetic ripple-button" href="https://github.com/your-username"
+                                target="_blank" rel="noopener noreferrer">Visit GitHub Profile</a>
+                        </article>
+
+                        <div class="github-dashboard">
+                            <article class="contribution-card glass reveal">
+                                <h3>Contribution Graph</h3>
+                                <div class="contribution-grid" aria-label="Contribution graph placeholder">
+                                    <span class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 3"></span>
+                                    <span class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 1"></span><span
+                                        class="contribution-cell" style="--level: 3"></span><span
+                                        class="contribution-cell" style="--level: 0"></span><span
+                                        class="contribution-cell" style="--level: 2"></span><span
+                                        class="contribution-cell" style="--level: 4"></span><span
+                                        class="contribution-cell" style="--level: 1"></span>
+                                </div>
+                            </article>
+
+                            <article class="pinned-card glass reveal">
+                                <h3>Pinned Projects</h3>
+                                <div class="pinned-grid">
+                                    <div class="repo-chip">
+                                        <strong>portfolio</strong>
+                                        <small>Responsive personal website</small>
+                                    </div>
+                                    <div class="repo-chip">
+                                        <strong>graph-plotter</strong>
+                                        <small>Coordinate geometry tool</small>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="activity-card glass reveal">
+                                <h3>Recent Activity</h3>
+                                <ul class="activity-list">
+                                    <li>Learning PHP and backend fundamentals</li>
+                                    <li>Improving responsive design skills</li>
+                                    <li>Preparing new project repositories</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="certificates" aria-labelledby="certificates-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Certificates</span>
+                        <h2 id="certificates-title">Achievements ready to grow.</h2>
+                    </div>
+
+                    <div class="certificate-grid">
+                        <article class="certificate-card glass reveal">
+                            <div class="certificate-icon">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M7 3h10v18l-5-3-5 3V3Z" stroke="currentColor" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>HTML Certificate</h3>
+                            <p>Add certificate details after completion.</p>
+                            <a class="btn small-btn ripple-button"
+                                href="data:text/plain;charset=utf-8,HTML%20certificate%20placeholder"
+                                download="html-certificate-placeholder.txt">Download</a>
+                        </article>
+
+                        <article class="certificate-card glass reveal">
+                            <div class="certificate-icon">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 7h16v10H4V7Z" stroke="currentColor" stroke-width="2" />
+                                    <path d="m8 17-2 4h12l-2-4" stroke="currentColor" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>JavaScript Certificate</h3>
+                            <p>Add course name, issuer, and date later.</p>
+                            <a class="btn small-btn ripple-button"
+                                href="data:text/plain;charset=utf-8,JavaScript%20certificate%20placeholder"
+                                download="javascript-certificate-placeholder.txt">Download</a>
+                        </article>
+
+                        <article class="certificate-card glass reveal">
+                            <div class="certificate-icon">
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <circle cx="12" cy="8" r="5" stroke="currentColor" stroke-width="2" />
+                                    <path d="M8.5 13 7 22l5-3 5 3-1.5-9" stroke="currentColor" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <h3>Future Certificate</h3>
+                            <p>Reserved for future backend, AI, or full stack learning achievements.</p>
+                            <a class="btn small-btn ripple-button"
+                                href="data:text/plain;charset=utf-8,Future%20certificate%20placeholder"
+                                download="future-certificate-placeholder.txt">Download</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="blog" aria-labelledby="blog-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Blog</span>
+                        <h2 id="blog-title">Notes from the learning path.</h2>
+                    </div>
+
+                    <div class="blog-grid">
+                        <article class="blog-card glass tilt-card reveal">
+                            <div class="blog-icon">01</div>
+                            <h3>My HTML Journey</h3>
+                            <p>How structure, semantic tags, and accessibility changed the way I think about web pages.
+                            </p>
+                            <a class="btn small-btn ripple-button" href="#blog">Read Soon</a>
+                        </article>
+                        <article class="blog-card glass tilt-card reveal">
+                            <div class="blog-icon">02</div>
+                            <h3>Learning JavaScript</h3>
+                            <p>Lessons from turning static pages into interactive tools, games, and experiments.</p>
+                            <a class="btn small-btn ripple-button" href="#blog">Read Soon</a>
+                        </article>
+                        <article class="blog-card glass tilt-card reveal">
+                            <div class="blog-icon">03</div>
+                            <h3>Building Projects</h3>
+                            <p>Why real applications make tutorials more useful and learning more memorable.</p>
+                            <a class="btn small-btn ripple-button" href="#blog">Read Soon</a>
+                        </article>
+                        <article class="blog-card glass tilt-card reveal">
+                            <div class="blog-icon">04</div>
+                            <h3>GitHub Tips</h3>
+                            <p>Simple habits for repositories, commits, READMEs, and sharing work publicly.</p>
+                            <a class="btn small-btn ripple-button" href="#blog">Read Soon</a>
+                        </article>
+                        <article class="blog-card glass tilt-card reveal">
+                            <div class="blog-icon">05</div>
+                            <h3>Future AI Learning</h3>
+                            <p>A plan for moving from web development foundations into AI-powered products.</p>
+                            <a class="btn small-btn ripple-button" href="#blog">Read Soon</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="tech-stack" aria-labelledby="tech-stack-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Tech Stack</span>
+                        <h2 id="tech-stack-title">Tools and technologies in motion.</h2>
+                    </div>
+                </div>
+
+                <div class="stack-marquee reveal" aria-label="Animated technology stack">
+                    <div class="stack-track">
+                        <div class="stack-item"><span class="stack-icon">HTML</span><strong>HTML</strong></div>
+                        <div class="stack-item"><span class="stack-icon">CSS</span><strong>CSS</strong></div>
+                        <div class="stack-item"><span class="stack-icon">JS</span><strong>JavaScript</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Git</span><strong>Git</strong></div>
+                        <div class="stack-item"><span class="stack-icon">GH</span><strong>GitHub</strong></div>
+                        <div class="stack-item"><span class="stack-icon">PHP</span><strong>PHP</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Node</span><strong>Node.js</strong></div>
+                        <div class="stack-item"><span class="stack-icon">R</span><strong>React</strong></div>
+                        <div class="stack-item"><span class="stack-icon">AS</span><strong>Android Studio</strong></div>
+                        <div class="stack-item"><span class="stack-icon">VS</span><strong>VS Code</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Fig</span><strong>Figma</strong></div>
+                        <div class="stack-item"><span class="stack-icon">AI</span><strong>AI</strong></div>
+                        <div class="stack-item"><span class="stack-icon">HTML</span><strong>HTML</strong></div>
+                        <div class="stack-item"><span class="stack-icon">CSS</span><strong>CSS</strong></div>
+                        <div class="stack-item"><span class="stack-icon">JS</span><strong>JavaScript</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Git</span><strong>Git</strong></div>
+                        <div class="stack-item"><span class="stack-icon">GH</span><strong>GitHub</strong></div>
+                        <div class="stack-item"><span class="stack-icon">PHP</span><strong>PHP</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Node</span><strong>Node.js</strong></div>
+                        <div class="stack-item"><span class="stack-icon">R</span><strong>React</strong></div>
+                        <div class="stack-item"><span class="stack-icon">AS</span><strong>Android Studio</strong></div>
+                        <div class="stack-item"><span class="stack-icon">VS</span><strong>VS Code</strong></div>
+                        <div class="stack-item"><span class="stack-icon">Fig</span><strong>Figma</strong></div>
+                        <div class="stack-item"><span class="stack-icon">AI</span><strong>AI</strong></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="testimonials" aria-labelledby="testimonials-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Testimonials</span>
+                        <h2 id="testimonials-title">Space for future feedback.</h2>
+                    </div>
+
+                    <div class="testimonial-grid">
+                        <article class="testimonial-card glass reveal">
+                            <p>“Amir shows curiosity, consistency, and a strong desire to learn through practical
+                                projects.”</p>
+                            <h3>Mentor Placeholder</h3>
+                            <span class="tag">Teacher</span>
+                        </article>
+                        <article class="testimonial-card glass reveal">
+                            <p>“A student developer who keeps improving and turns learning into visible work.”</p>
+                            <h3>Peer Placeholder</h3>
+                            <span class="tag">Classmate</span>
+                        </article>
+                        <article class="testimonial-card glass reveal">
+                            <p>“His project-first mindset is exactly what helps beginners become confident engineers.”
+                            </p>
+                            <h3>Community Placeholder</h3>
+                            <span class="tag">Developer</span>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="contact" aria-labelledby="contact-title">
+                <div class="container">
+                    <div class="section-header reveal">
+                        <span class="eyebrow">Contact</span>
+                        <h2 id="contact-title">Let’s build the next step.</h2>
+                    </div>
+
+                    <div class="contact-layout">
+                        <aside class="contact-panel glass reveal">
+                            <h3>Professional Contact</h3>
+                            <p>Use the form to send a message, suggest a project idea, or connect about learning,
+                                collaboration, and opportunities.</p>
+                            <div class="contact-list">
+                                <a href="mailto:your.email@example.com">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M4 6h16v12H4V6Zm0 1 8 6 8-6" stroke="currentColor" stroke-width="2"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    your.email@example.com
+                                </a>
+                                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path
+                                            d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 7 7.4c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.5 9.5 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                    GitHub Profile
+                                </a>
+                                <a href="https://linkedin.com/in/your-profile" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                        <path d="M6.5 8.8V19M10.5 19v-5.5c0-2.9 4-3.1 4 0V19M6.5 5.5v.1"
+                                            stroke="currentColor" stroke-width="2.4" stroke-linecap="round" />
+                                        <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor"
+                                            stroke-width="2" />
+                                    </svg>
+                                    LinkedIn Profile
+                                </a>
+                            </div>
+                        </aside>
+
+                        <form class="contact-form glass reveal" id="contactForm" novalidate>
+                            <div class="form-grid">
+                                <div class="field">
+                                    <label for="name">Name</label>
+                                    <input id="name" name="name" type="text" autocomplete="name" required
+                                        aria-describedby="nameError">
+                                    <span class="field-error" id="nameError"></span>
+                                </div>
+                                <div class="field">
+                                    <label for="email">Email</label>
+                                    <input id="email" name="email" type="email" autocomplete="email" required
+                                        aria-describedby="emailError">
+                                    <span class="field-error" id="emailError"></span>
+                                </div>
+                                <div class="field full">
+                                    <label for="subject">Subject</label>
+                                    <input id="subject" name="subject" type="text" required
+                                        aria-describedby="subjectError">
+                                    <span class="field-error" id="subjectError"></span>
+                                </div>
+                                <div class="field full">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required minlength="10"
+                                        aria-describedby="messageError"></textarea>
+                                    <span class="field-error" id="messageError"></span>
+                                </div>
+                            </div>
+                            <div class="form-success" id="formSuccess" role="status" aria-live="polite">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2.4"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                Message validated successfully.
+                            </div>
+                            <button class="btn btn-primary magnetic ripple-button" type="submit">
+                                Send Message
+                                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                    <path d="M4 12 20 4l-5 16-3-7-8-1Z" stroke="currentColor" stroke-width="2"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <p class="footer-copy">© <span id="year"></span> Amir Hamaja Jahagirdar. Made with ❤️ by Amir Hamaja
+                    Jahagirdar.</p>
+                <div class="social-links" aria-label="Social links">
+                    <a class="social-link" href="https://github.com/your-username" target="_blank"
+                        rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path
+                                d="M12 2a10 10 0 0 0-3 19c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-5A3.9 3.9 0 0 1 7 7.4c-.1-.3-.5-1.3.1-2.7 0 0 .9-.3 2.8 1a9.5 9.5 0 0 1 5.2 0c1.9-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.8v2.7c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://linkedin.com/in/your-profile" target="_blank"
+                        rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M6.5 8.8V19M10.5 19v-5.5c0-2.9 4-3.1 4 0V19M6.5 5.5v.1" stroke="currentColor"
+                                stroke-width="2.4" stroke-linecap="round" />
+                            <rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://instagram.com/your-profile" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2" />
+                            <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" />
+                        </svg>
+                    </a>
+                    <a class="social-link" href="mailto:your.email@example.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <path d="M4 6h16v12H4V6Zm0 1 8 6 8-6" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div> <button class="icon-button back-to-top ripple-button" id="backToTop" type="button" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 19V5m0 0-6 6m6-6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg> </button>
+    <script> (() => { "use strict"; const doc = document; const body = doc.body; const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches; const finePointer = window.matchMedia("(pointer: fine)").matches; const $ = (selector, scope = doc) => scope.querySelector(selector); const $$ = (selector, scope = doc) => Array.from(scope.querySelectorAll(selector)); /* Loading and page state */ const finishLoading = () => { body.classList.add("loaded"); const loader = $("#loader"); if (loader) loader.setAttribute("aria-hidden", "true"); }; if (document.readyState === "complete") { setTimeout(finishLoading, prefersReducedMotion ? 0 : 320); } else { window.addEventListener("load", () => setTimeout(finishLoading, prefersReducedMotion ? 0 : 320), { once: true }); } $("#year").textContent = new Date().getFullYear(); /* Header, navigation, and scroll progress */ const header = $("#siteHeader"); const progress = $("#scrollProgress"); const backToTop = $("#backToTop"); const nav = $("#primaryNavigation"); const navToggle = $(".nav-toggle"); let tickingScroll = false; const updateScrollUI = () => { const max = Math.max(1, doc.documentElement.scrollHeight - window.innerHeight); const ratio = Math.min(1, Math.max(0, window.scrollY / max)); progress.style.transform = `scaleX(${ratio})`; header.classList.toggle("is-scrolled", window.scrollY > 18); backToTop.classList.toggle("show", window.scrollY > 640); tickingScroll = false; }; window.addEventListener("scroll", () => { if (!tickingScroll) { tickingScroll = true; requestAnimationFrame(updateScrollUI); } }, { passive: true }); updateScrollUI(); navToggle.addEventListener("click", () => { const isOpen = nav.classList.toggle("is-open"); navToggle.setAttribute("aria-expanded", String(isOpen)); navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu"); }); nav.addEventListener("click", (event) => { if (event.target.closest("a")) { nav.classList.remove("is-open"); navToggle.setAttribute("aria-expanded", "false"); navToggle.setAttribute("aria-label", "Open menu"); } }); doc.addEventListener("keydown", (event) => { if (event.key === "Escape") { nav.classList.remove("is-open"); navToggle.setAttribute("aria-expanded", "false"); navToggle.setAttribute("aria-label", "Open menu"); } }); backToTop.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: prefersReducedMotion ? "auto" : "smooth" }); }); $$('a[href^="#"]').forEach((anchor) => { anchor.addEventListener("click", (event) => { const target = $(anchor.getAttribute("href")); if (!target) return; event.preventDefault(); target.scrollIntoView({ behavior: prefersReducedMotion ? "auto" : "smooth", block: "start" }); }); }); /* Theme toggle */ const themeToggle = $("#themeToggle"); const metaTheme = $('meta[name="theme-color"]'); const getStoredTheme = () => { try { return localStorage.getItem("portfolio-theme"); } catch { return null; } }; const setStoredTheme = (theme) => { try { localStorage.setItem("portfolio-theme", theme); } catch { return null; } }; const applyTheme = (theme) => { body.dataset.theme = theme; const isLight = theme === "light"; themeToggle.setAttribute("aria-pressed", String(isLight)); themeToggle.setAttribute("aria-label", isLight ? "Switch to dark theme" : "Switch to light theme"); if (metaTheme) metaTheme.setAttribute("content", isLight ? "#f6f8ff" : "#070914"); }; applyTheme(getStoredTheme() || "dark"); themeToggle.addEventListener("click", () => { const nextTheme = body.dataset.theme === "light" ? "dark" : "light"; applyTheme(nextTheme); setStoredTheme(nextTheme); }); /* Scroll reveal, skill bars, counters, and active nav */ const revealItems = $$(".reveal"); const skillLines = $$(".skill-line"); const counterItems = $$("[data-count]"); const sections = $$("main section[id]"); const navLinks = $$(".primary-nav a"); const animateCounter = (element) => { if (element.dataset.counted === "true") return; element.dataset.counted = "true"; const target = Number(element.dataset.count || 0); const suffix = element.dataset.suffix || ""; const duration = prefersReducedMotion ? 1 : 1300; const start = performance.now(); const step = (now) => { const progressValue = Math.min(1, (now - start) / duration); const eased = 1 - Math.pow(1 - progressValue, 3); element.textContent = `${Math.round(target * eased)}${suffix}`; if (progressValue < 1) requestAnimationFrame(step); }; requestAnimationFrame(step); }; if ("IntersectionObserver" in window) { const revealObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (!entry.isIntersecting) return; entry.target.classList.add("in-view"); if (entry.target.classList.contains("skill-line")) { const fill = $(".skill-fill", entry.target); if (fill) fill.style.width = `${entry.target.dataset.skill || 0}%`; } if (entry.target.hasAttribute("data-count")) { animateCounter(entry.target); } revealObserver.unobserve(entry.target); }); }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });[...revealItems, ...skillLines, ...counterItems].forEach((item) => revealObserver.observe(item)); const sectionObserver = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (!entry.isIntersecting) return; const id = entry.target.getAttribute("id"); navLinks.forEach((link) => { link.classList.toggle("is-active", link.getAttribute("href") === `#${id}`); }); }); }, { threshold: 0.35 }); sections.forEach((section) => sectionObserver.observe(section)); } else { revealItems.forEach((item) => item.classList.add("in-view")); skillLines.forEach((line) => { const fill = $(".skill-fill", line); if (fill) fill.style.width = `${line.dataset.skill || 0}%`; }); counterItems.forEach(animateCounter); } /* Typing animation */ const typingTarget = $("#typingText"); const typingWords = ["HTML Developer", "JavaScript Developer", "Future Full Stack Developer", "AI Builder", "Open Source Learner"]; if (typingTarget && !prefersReducedMotion) { let wordIndex = 0; let charIndex = 0; let deleting = false; const typeLoop = () => { const word = typingWords[wordIndex]; typingTarget.textContent = word.slice(0, charIndex); if (!deleting && charIndex < word.length) { charIndex += 1; setTimeout(typeLoop, 70); return; } if (!deleting && charIndex === word.length) { deleting = true; setTimeout(typeLoop, 1100); return; } if (deleting && charIndex > 0) { charIndex -= 1; setTimeout(typeLoop, 34); return; } deleting = false; wordIndex = (wordIndex + 1) % typingWords.length; setTimeout(typeLoop, 260); }; typeLoop(); } /* Cursor */ if (finePointer && !prefersReducedMotion) { const dot = $(".cursor-dot"); const ring = $(".cursor-ring"); let mouseX = window.innerWidth / 2; let mouseY = window.innerHeight / 2; let ringX = mouseX; let ringY = mouseY; body.classList.add("cursor-ready"); window.addEventListener("pointermove", (event) => { mouseX = event.clientX; mouseY = event.clientY; dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`; }, { passive: true }); const cursorLoop = () => { ringX += (mouseX - ringX) * 0.18; ringY += (mouseY - ringY) * 0.18; ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%)`; requestAnimationFrame(cursorLoop); }; cursorLoop(); $$("a, button, input, textarea, .tilt-card").forEach((item) => { item.addEventListener("pointerenter", () => body.classList.add("cursor-hover")); item.addEventListener("pointerleave", () => body.classList.remove("cursor-hover")); }); doc.addEventListener("pointerleave", () => body.classList.remove("cursor-ready")); doc.addEventListener("pointerenter", () => body.classList.add("cursor-ready")); } /* Magnetic buttons and ripple */ if (finePointer && !prefersReducedMotion) { $$(".magnetic").forEach((item) => { item.addEventListener("pointermove", (event) => { const rect = item.getBoundingClientRect(); const x = (event.clientX - rect.left - rect.width / 2) * 0.22; const y = (event.clientY - rect.top - rect.height / 2) * 0.22; item.style.transform = `translate3d(${x}px, ${y}px, 0)`; }); item.addEventListener("pointerleave", () => { item.style.transform = ""; }); }); } $$(".ripple-button").forEach((button) => { button.addEventListener("click", (event) => { const rect = button.getBoundingClientRect(); const size = Math.max(rect.width, rect.height); const ripple = doc.createElement("span"); ripple.className = "ripple-effect"; ripple.style.width = `${size}px`; ripple.style.height = `${size}px`; ripple.style.left = `${event.clientX - rect.left - size / 2}px`; ripple.style.top = `${event.clientY - rect.top - size / 2}px`; button.appendChild(ripple); ripple.addEventListener("animationend", () => ripple.remove(), { once: true }); }); }); /* 3D tilt cards */ if (finePointer && !prefersReducedMotion) { $$(".tilt-card").forEach((card) => { card.addEventListener("pointermove", (event) => { const rect = card.getBoundingClientRect(); const x = (event.clientX - rect.left) / rect.width; const y = (event.clientY - rect.top) / rect.height; const rotateY = (x - 0.5) * 10; const rotateX = (0.5 - y) * 10; card.style.setProperty("--rx", `${rotateX}deg`); card.style.setProperty("--ry", `${rotateY}deg`); card.classList.add("is-tilting"); }); card.addEventListener("pointerleave", () => { card.classList.remove("is-tilting"); card.style.removeProperty("--rx"); card.style.removeProperty("--ry"); }); }); } /* Mouse parallax */ if (finePointer && !prefersReducedMotion) { const parallaxItems = $$(".parallax"); let px = 0; let py = 0; let parallaxTicking = false; const updateParallax = () => { parallaxItems.forEach((item) => { const depth = Number(item.dataset.depth || 0.05); item.style.translate = `${px * depth}px ${py * depth}px`; }); parallaxTicking = false; }; window.addEventListener("pointermove", (event) => { px = event.clientX - window.innerWidth / 2; py = event.clientY - window.innerHeight / 2; if (!parallaxTicking) { parallaxTicking = true; requestAnimationFrame(updateParallax); } }, { passive: true }); } /* Contact form validation */ const form = $("#contactForm"); const success = $("#formSuccess"); const validators = { name: (value) => value.trim().length >= 2 || "Please enter your name.", email: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim()) || "Please enter a valid email address.", subject: (value) => value.trim().length >= 3 || "Please enter a subject.", message: (value) => value.trim().length >= 10 || "Please write at least 10 characters." }; const setError = (field, message) => { const input = $(`#${field}`); const error = $(`#${field}Error`); input.setAttribute("aria-invalid", message ? "true" : "false"); error.textContent = message || ""; }; form.addEventListener("submit", (event) => { event.preventDefault(); success.classList.remove("show"); let valid = true; Object.keys(validators).forEach((field) => { const input = $(`#${field}`); const result = validators[field](input.value); if (result !== true) { valid = false; setError(field, result); } else { setError(field, ""); } }); if (!valid) { const firstInvalid = form.querySelector('[aria-invalid="true"]'); if (firstInvalid) firstInvalid.focus(); return; } success.classList.add("show"); form.reset(); Object.keys(validators).forEach((field) => setError(field, "")); }); $$("input, textarea", form).forEach((input) => { input.addEventListener("input", () => { if (input.getAttribute("aria-invalid") === "true") { const result = validators[input.id](input.value); setError(input.id, result === true ? "" : result); } }); }); /* Particle canvas */ const canvas = $("#particle-canvas"); const ctx = canvas.getContext("2d", { alpha: true }); let width = 0; let height = 0; let dpr = 1; let particles = []; let particleFrame = 0; let pointer = { x: 0, y: 0, active: false }; const createParticles = () => { const count = prefersReducedMotion ? 28 : Math.min(86, Math.max(36, Math.floor((width * height) / 18000))); particles = Array.from({ length: count }, (_, index) => ({ x: Math.random() * width, y: Math.random() * height, vx: (Math.random() - 0.5) * 0.32, vy: (Math.random() - 0.5) * 0.32, size: Math.random() * 1.8 + 0.7, hue: index % 3, alpha: Math.random() * 0.45 + 0.2 })); }; const resizeCanvas = () => { dpr = Math.min(2, window.devicePixelRatio || 1); width = window.innerWidth; height = window.innerHeight; canvas.width = Math.floor(width * dpr); canvas.height = Math.floor(height * dpr); canvas.style.width = `${width}px`; canvas.style.height = `${height}px`; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); createParticles(); }; const colorFor = (particle) => { if (particle.hue === 0) return "132, 247, 255"; if (particle.hue === 1) return "255, 79, 216"; return "183, 255, 90"; }; const drawParticles = () => { ctx.clearRect(0, 0, width, height); for (let i = 0; i < particles.length; i += 1) { const p = particles[i]; if (!prefersReducedMotion) { p.x += p.vx; p.y += p.vy; if (pointer.active) { const dx = p.x - pointer.x; const dy = p.y - pointer.y; const distSq = dx * dx + dy * dy; if (distSq < 11000 && distSq > 0.01) { const force = (1 - distSq / 11000) * 0.28; p.x += dx * force * 0.025; p.y += dy * force * 0.025; } } if (p.x < -20) p.x = width + 20; if (p.x > width + 20) p.x = -20; if (p.y < -20) p.y = height + 20; if (p.y > height + 20) p.y = -20; } const rgb = colorFor(p); ctx.beginPath(); ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2); ctx.fillStyle = `rgba(${rgb}, ${p.alpha})`; ctx.fill(); for (let j = i + 1; j < particles.length; j += 1) { const q = particles[j]; const dx = p.x - q.x; const dy = p.y - q.y; const distance = Math.sqrt(dx * dx + dy * dy); if (distance < 112) { ctx.beginPath(); ctx.moveTo(p.x, p.y); ctx.lineTo(q.x, q.y); ctx.strokeStyle = `rgba(${rgb}, ${0.09 * (1 - distance / 112)})`; ctx.lineWidth = 1; ctx.stroke(); } } } if (!prefersReducedMotion && !document.hidden) { particleFrame = requestAnimationFrame(drawParticles); } }; resizeCanvas(); drawParticles(); window.addEventListener("resize", resizeCanvas, { passive: true }); window.addEventListener("pointermove", (event) => { pointer = { x: event.clientX, y: event.clientY, active: true }; }, { passive: true }); window.addEventListener("pointerleave", () => { pointer.active = false; }); document.addEventListener("visibilitychange", () => { if (document.hidden) { cancelAnimationFrame(particleFrame); } else if (!prefersReducedMotion) { particleFrame = requestAnimationFrame(drawParticles); } }); })(); </script>
+</body>
+
+</html>
